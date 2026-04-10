@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us - CSC</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
+}
+
+/* Card */
+.container{
+    width: 80%;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h1{
+    text-align: center;
+    color: #0288d1;
+}
+
+/* Input fields */
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Button */
+button{
+    width: 100%;
+    padding: 12px;
+    background: #ffca28;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #ffb300;
+    transform: scale(1.05);
+}
+
+/* Info */
+.info{
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+
+    <form>
+        
+         
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Message</label>
+        <textarea rows="5" placeholder="Write your message"></textarea>
+
+        <button type="button" onclick="sendWhatsApp()">Send Message</button>
+    </form>
+
+    <div class="info">
+        <p><b>CSC Computer Education</b></p>
+        <p>📍SIVAGANGA KALAIYARKOVIL KALISHVAR TEMPLE OPPOSITE</p>
+        <p>📞 +91 XXXXX XXXXX</p>
+        <p>✉ info@csc.com</p>
+    </div>
+</div>
+<script>
+function sendWhatsApp(){
+    let name = document.querySelector("input[type='text']").value;
+    let email = document.querySelector("input[type='email']").value;
+    let msg = document.querySelector("textarea").value;
+
+    let phone1 = "919047465713"; // ✅ your number
+
+    let text = "Hello CSC Team 👋" +
+               "\nName: " + name +
+               "\nEmail: " + email +
+               "\nMessage: " + msg;
+
+    let url = "https://wa.me/" + phone1 + "?text=" + encodeURIComponent(text);
+
+    window.open(url, "_blank");
+}
+</script>
+
+    window.open(url, "_blank");
+}
+</script>
+</body>
+</html>

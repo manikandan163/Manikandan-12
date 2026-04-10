@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSC</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+  html{
+  scroll-behavior: smooth;
+
+}
+
+/* HEADER */
+header{
+  background:#e6f2ff;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1{
+  color:#003366;
+}
+
+.menu{
+  font-size:25px;
+  cursor:pointer;
+}
+
+/* HERO IMAGE */
+.hero img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+/* SECTION STYLE */
+.section{
+  background:#0b3c5d;
+  color:white;
+  margin:20px;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* TITLE */
+.section h2{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+/* PARAGRAPH */
+.section p{
+  line-height:1.6;
+  margin-bottom:20px;
+}
+
+/* 3D BUTTON */
+.btn{
+  background:red;
+  color:white;
+  padding:12px 25px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 5px 0 darkred;
+  transition:0.2s;
+}
+
+.btn:active{
+  box-shadow:0 2px 0 darkred;
+  transform:translateY(3px);
+}
+
+/* IMAGE GRID */
+.gallery{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:20px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* SCROLL BUTTON */
+.top-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:red;
+  color:white;
+  border:none;
+  padding:15px;
+  border-radius:50%;
+  font-size:18px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:#003366;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>CSC COMPUTER EDUCATION </h1>
+  <div class="menu">☰</div>
+</header>
+
+<!-- HERO IMAGE -->
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="students">
+</div>
+
+<!-- SECTION 1 -->
+<div class="section">
+  <h2>Our Pride</h2>
+  <p>
+  Pride in CSC represents confidence, achievement, and the journey of learning computer skills. At CSC, we believe every student has the ability to grow from basic knowledge to advanced digital skills with the right guidance and practice.
+Our training programs are designed to build not only technical knowledge but also self-confidence. From basic computer operations to advanced software applications, we help students gain skills that are useful for education, jobs, and future careers.
+Pride means taking responsibility for your learning and improving step by step. At CSC, we encourage students to work hard, practice regularly, and become skilled professionals in the digital world.
+With modern facilities, experienced guidance, and practical learning, CSC helps every student feel proud of their progress and achievements.
+
+-“Learn Skills. Build Confidence. Feel Proud with CSC.”<br>
+  <a href="#more1">
+  <button class="btn">Know More</button>
+</a>
+
+<!-- SECTION 2 -->
+<div class="section">
+  <h2>Our Campus</h2>
+  <p>
+    Pride in our campus represents confidence, achievement, and the journey of learning computer skills. At CSC, our campus provides a friendly and supportive environment where every student can grow from basic knowledge to advanced digital skills with proper guidance.
+Our campus training programs are designed to build both technical knowledge and self-confidence. From basic computer operations to advanced software applications, students gain practical skills that help in education, jobs, and future careers.
+  </p>
+  <button class="btn">Know More</button>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+  <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754">
+  <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178">
+  <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b">
+  <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914">
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 CSC Website</p>
+</footer>
+
+<!-- SCROLL TOP BUTTON -->
+<button class="top-btn" onclick="scrollToTop()">↑</button>
+
+<script>
+function scrollToTop(){
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+}
+</script>
+<div class="section" id="more1">
+  <h2>More About Our Pride</h2>
+  <p>
+  “Our Pride is Our Students’ Success.”
+  </p>
+</div>
+</body>
+</html>
